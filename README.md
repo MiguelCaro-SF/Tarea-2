@@ -1,4 +1,4 @@
-<em> # Tarea-2-Computadoras </em>
+<h1 align="center"> <em> # Tarea-2-Computadoras </em> </h1>
 Investigación acerca de los diferentes tipos de computadores que existen
 <img width="1625" height="438" alt="image" src="https://github.com/user-attachments/assets/0ca642dc-ba6b-470c-82ee-a4bdf49e97d4" />
 

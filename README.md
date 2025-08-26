@@ -1,3 +1,16 @@
+##Índice
+*[Título e imagen de portada](#Título-e-imagen-de-portada)
+*[Insignias](#insignias)
+*[Índice](#índice)
+*[Descripción del proyecto](#descripción-del-proyecto)
+*[Estado del proyecto](#Estado-del-proyecto)
+*[Características de la aplicación y demostración](#Características-de-la-aplicación-y-demostración)
+*[Acceso al proyecto](#acceso-proyecto)
+*[Tecnologías utilizadas](#tecnologías-utilizadas)
+*[Personas Contribuyentes](#personas-contribuyentes)
+*[Personas-Desarrolladores del Proyecto](#personas-desarrolladores)
+* [Licencia](#licencia)
+*[Conclusión](#conclusión)
 <h1 align="center"> <em> # Tarea-2-Computadoras </em> </h1>
 Investigación acerca de los diferentes tipos de computadores que existen
 <img width="1625" height="438" alt="image" src="https://github.com/user-attachments/assets/0ca642dc-ba6b-470c-82ee-a4bdf49e97d4" />

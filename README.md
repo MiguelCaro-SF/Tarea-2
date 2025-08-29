@@ -1,97 +1,162 @@
-# Tipos de Computación Avanzada
+# Tarea 2 investigación de computadores y oprdenadores
+---
 
-La evolución de la informática ha dado lugar a nuevos paradigmas de computación que buscan superar las limitaciones de los sistemas tradicionales. Entre los enfoques más prometedores se encuentran la **computación cuántica, neuromórfica, biológica, heterogénea y de borde**, cada una con características únicas que apuntan a transformar distintos campos.
+## 1. Computación cuántica
+
+La computación cuántica usa principios de la mecánica cuántica —como **superposición**, **entrelazamiento** e **interferencia**— para procesar información.  
+A diferencia de la computación clásica (bits 0/1), la unidad básica es el **qubit** que puede existir en combinaciones lineales de 0 y 1 simultáneamente.
+
+### Arquitectura y partes
+- **Qubits (procesador cuántico):** superconductores, iones atrapados, fotones, spins, etc.  
+- **Control clásico:** electrónica que genera pulsos (microondas, láseres).  
+- **Sistema de lectura/medición:** detectores que transforman el estado cuántico en señales clásicas.  
+- **Cryogenia/ambiente:** aislamiento extremo o temperaturas ultrabajas.  
+- **Software y compiladores cuánticos:** mapean algoritmos a hardware.  
+- **Corrección de errores:** redundancia de qubits físicos para qubits lógicos.  
+
+### Historia
+- 1980s: Richard Feynman propone simulación cuántica.  
+- 1985: David Deutsch formula la máquina cuántica universal.  
+- 1994: Peter Shor desarrolla su famoso algoritmo de factorización.  
+- 2000s: primeras implementaciones experimentales.  
+- 2010s–2020s: plataformas comerciales, supremacía cuántica.  
+
+### Ventajas
+- Resolución más rápida de problemas específicos (factorización, búsqueda, simulación).  
+- Simulación natural de química y materiales.  
+
+### Desventajas y desafíos
+- Coherencia limitada y decoherencia por el ambiente.  
+- Elevados errores → necesidad de corrección cuántica.  
+- Escalabilidad compleja.  
+- No todos los problemas se benefician.  
+
+### Conceptos clave
+- **Superposición:** un qubit puede estar en `α|0> + β|1>` con `|α|² + |β|² = 1`.  
+- **Entrelazamiento:** correlación cuántica entre qubits, esencial para teleportación.  
+- **Interferencia cuántica:** fases se suman/cancelan para reforzar soluciones.  
+- **Medición probabilística:** el estado colapsa a 0 o 1 con probabilidades definidas.  
+- **Coherencia:** tiempo limitado antes de que se degrade la información.  
+
+### Tipos de comunicación cuántica
+- **QKD (distribución de claves cuánticas).**  
+- **Teleportación cuántica.**  
+- **Superdense coding.**  
+- **Redes cuánticas / internet cuántico.**  
+
+### Compuertas cuánticas comunes
+- **Un qubit:** Pauli-X, Y, Z, Hadamard (H), Phase (S), T.  
+- **Dos qubits:** CNOT, CZ, iSWAP.  
+- Combinadas en circuitos para algoritmos.  
 
 ---
 
-## 1. Computación Cuántica
-La computación cuántica es una tecnología emergente que utiliza los principios de la mecánica cuántica para resolver problemas complejos que los ordenadores clásicos no pueden abordar de manera eficiente. A diferencia de los bits clásicos, que solo pueden representar 0 o 1, los qubits pueden estar en estados de superposición, lo que permite realizar cálculos en múltiples estados simultáneamente.
+## 2. Computación neuromórfica
 
-- **Historia:** Teorizada en los años 80 por Richard Feynman y David Deutsch. En la actualidad, empresas como IBM, Google y D-Wave desarrollan prototipos funcionales.  
-- **Ventajas:**
-  - Resolución de problemas inabordables para computadoras clásicas (factorización, simulaciones moleculares, optimización).  
-  - Potencial en criptografía e inteligencia artificial.  
-- **Desventajas:**
-  - Tecnología experimental y costosa.  
-  - Necesita condiciones físicas extremas (cero absoluto, aislamiento).  
-- **Aplicaciones:**
-  - Criptografía avanzada.  
-  - Descubrimiento de fármacos.  
-  - Optimización en logística y finanzas.  
+Emula principios del cerebro (redes neuronales y sinapsis) en hardware/software para eficiencia energética y procesamiento paralelo.
 
----
+### Arquitectura y funcionamiento
+- **Neuronas:** integran entradas y generan salidas.  
+- **Sinapsis:** pesos de conexión (almacenados localmente o en memristores).  
+- **Interconexión:** envío de picos o eventos.  
+- **Memoria local y computación en memoria.**  
 
-## 2. Computación Neuromórfica
-La computación neuromórfica es un enfoque de la ingeniería informática que imita la forma en que funciona el cerebro humano. Este método busca emular el comportamiento del sistema nervioso animal, diseñando hardware y software que simulan las estructuras y funciones neuronales y sinápticas del cerebro para procesar información. Además, se trabaja en la creación de neuronas sintéticas que imitan a las neuronas biológicas y sus sinapsis, lo que permite un procesamiento de datos más eficiente y similar al funcionamiento del cerebro. 
-- **Historia:** Surge en los 80 como integración entre neurociencia y electrónica. Hoy, empresas como Intel (Loihi) y proyectos académicos la investigan.  
-- **Ventajas:**
-  - Gran eficiencia energética.  
-  - Excelente en reconocimiento de patrones y aprendizaje.  
-  - Adecuada para inteligencia artificial en tiempo real.  
-- **Desventajas:**
-  - Tecnología en desarrollo, con poca estandarización.  
-  - Programación compleja y aún limitada.  
-- **Aplicaciones:**
-  - Robótica autónoma.  
-  - Procesamiento de visión y voz.  
-  - Inteligencia artificial distribuida.  
+### Ventajas
+- Gran eficiencia energética.  
+- Procesamiento masivo en paralelo.  
+- Latencia muy baja.  
 
----
+### Desventajas
+- Difícil de programar y entrenar.  
+- Ecosistema inmaduro.  
+- Precisión limitada en modelos analógicos.  
 
-## 3. Computación Biológica
-La computación biológica es un área que explora cómo aprovechar elementos biológicos para procesar y almacenar información, así como la posibilidad de aplicar principios evolutivos para desarrollar nuevos algoritmos que resuelvan problemas complejos. Esta área innovadora busca cómo los procesos biológicos, como el ADN, pueden realizar cálculos complejos de manera eficaz. Además, estudia cómo inspirarse en los mecanismos biológicos para resolver retos en diversas disciplinas.
+### Hardware utilizado
+- **Digitales especializados:** IBM TrueNorth, Intel Loihi, SpiNNaker.  
+- **Analógicos/mixtos:** transistores, capacitores.  
+- **Memristores y RRAM:** para pesos en memoria-computación.  
 
-- **Historia:** En los años 90, Leonard Adleman demostró que cadenas de ADN podían resolver problemas matemáticos complejos.  
-- **Ventajas:**
-  - Procesamiento paralelo masivo.  
-  - Almacenamiento de información extremadamente denso.  
-  - Bajo consumo energético.  
-- **Desventajas:**
-  - Tecnología experimental y difícil de escalar.  
-  - Riesgos éticos y biológicos.  
-- **Aplicaciones:**
-  - Bioinformática y medicina personalizada.  
-  - Almacenamiento de grandes volúmenes de datos.  
-  - Simulaciones biológicas y químicas.  
+### Tipos
+- **Spiking neuromorphic (SNN).**  
+- **Rate-based / event-driven.**  
+- **Digital neuromorphic.**  
+- **Analog / mixed-signal.**  
 
 ---
 
-## 4. Computación Heterogénea
-La computación heterogénea es un paradigma en la arquitectura informática que integra múltiples tipos de procesadores y unidades informáticas dentro de un único sistema para lograr un rendimiento y una eficiencia optimizados. En tal entorno, varios procesadores, como CPU y GPU, matrices de puertas programables en campo (FPGA) y otros aceleradores especializados colaboran para ejecutar diversas tareas computacionales.
+## 3. Ordenador biológico
 
-La esencia de la informática heterogénea radica en su capacidad de distribuir cargas de trabajo según las fortalezas de cada tipo de procesador. Cada tipo de procesador se destaca en el manejo de tipos específicos de operaciones: las CPU son adecuadas para tareas secuenciales, las GPU para procesamiento paralelo y las FPGA para tareas personalizables y de alto rendimiento. Esta distribución permite mejorar el rendimiento, ya que las tareas son procesadas de manera más rápida y eficiente por las personas más apropiadas. hardware. Además, mejora la eficiencia energética al reducir la carga computacional en procesadores menos adecuados, reduciendo así el consumo de energía.
-- **Historia:** Se populariza en los 2000 con la creciente necesidad de procesamiento paralelo en gráficos e inteligencia artificial.  
-- **Ventajas:**
-  - Uso eficiente de recursos especializados.  
-  - Aumento del rendimiento en tareas concretas.  
-  - Escalabilidad en sistemas complejos.  
-- **Desventajas:**
-  - Mayor complejidad en diseño y programación.  
-  - Costos de integración y mantenimiento.  
-- **Aplicaciones:**
-  - Supercomputación.  
-  - Inteligencia artificial y aprendizaje profundo.  
-  - Procesamiento de gráficos y simulaciones físicas.  
+La computación biológica usa sistemas biológicos o biomoléculas (ADN, ARN, proteínas, células) para procesar información.
+
+### Arquitectura
+- **Información:** secuencias de ADN/ARN, estados celulares.  
+- **Operadores lógicos:** reacciones químicas, enzimas.  
+- **Entradas/salidas:** moléculas o detecciones bioquímicas.  
+- **Entorno:** tubos de ensayo, células, microfluidos.  
+
+### Tipos
+- **Computación con ADN.**  
+- **Computación molecular/enzimática.**  
+- **Computación celular/sintética.**  
+- **Basada en proteínas.**  
+
+### Principales hitos
+- 1994: Leonard Adleman resuelve un problema con ADN.  
+- 2000s: puertas lógicas moleculares y circuitos genéticos.  
+- 2010s: avances en DNA origami y CRISPR.  
+- Actualidad: biocircuitos complejos, biosensores.  
+
+### Ventajas
+- Alta densidad de información.  
+- Integración en entornos biológicos.  
+
+### Desventajas
+- Lento comparado con la electrónica.  
+- Protocolos complejos.  
+- Desafíos éticos y bioseguridad.  
 
 ---
 
-## 5. Computación de Borde (Edge Computing)
-Procesamiento de datos **cerca de su origen**, evitando depender exclusivamente de la nube.
+## 4. Computación heterogénea
 
-- **Historia:** Surge en la década de 2010 con el crecimiento del IoT (Internet of Things) y la necesidad de reducir la latencia.  
-- **Ventajas:**
-  - Reducción de la latencia y dependencia de internet.  
-  - Menor congestión de redes.  
-  - Mejor seguridad al procesar datos localmente.  
-- **Desventajas:**
-  - Capacidad de cómputo limitada frente a la nube.  
-  - Complejidad en la gestión de dispositivos distribuidos.  
-- **Aplicaciones:**
-  - Vehículos autónomos.  
-  - Dispositivos IoT y ciudades inteligentes.  
-  - Sistemas de monitoreo en tiempo real.  
+Combina distintos procesadores (CPU, GPU, FPGA, ASIC) en un sistema para asignar cada tarea a la unidad más eficiente.
 
- **Conclusión:**  
-Estos paradigmas representan el futuro de la computación. Ninguno reemplaza totalmente a los demás, sino que **convivirán de forma híbrida** según las necesidades de cada aplicación.
+### Historia
+- Coprocesadores (FPU, DSPs).  
+- 2000s: GPUs usadas para cómputo general.  
+- 2010s–2020s: aceleradores de IA (TPU, NPU).  
 
+### Ventajas
+- Mejor rendimiento por watt.  
+- Flexibilidad para cargas diversas.  
+- Escalabilidad funcional.  
 
+### Desventajas
+- Compleja de programar y optimizar.  
+- Problemas de coherencia y latencia.  
+- Difícil gestión de recursos.  
+
+---
+
+## 5. Computación de borde (Edge Computing)
+
+Procesa datos cerca de la fuente (IoT, sensores) en lugar de depender solo de la nube.
+
+### Historia
+- Surge con IoT y baja latencia (2010s).  
+- Evolución a híbrido nube-borde con microcentros de datos.  
+
+### Ventajas
+- **Baja latencia:** tiempo real (autos, industria).  
+- **Menor ancho de banda:** solo se envía lo esencial.  
+- **Privacidad:** datos locales.  
+- **Resiliencia:** funciona aun sin nube.  
+
+### Desventajas
+- Difícil de gestionar (muchos nodos).  
+- Limitación de recursos locales.  
+- Riesgo de seguridad distribuida.  
+
+---
+
+📌 _Documento generado automáticamente. Si necesitas referencias, bibliografía o diagramas en SVG/PDF, se pueden añadir fácilmente._

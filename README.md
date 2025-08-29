@@ -156,7 +156,3 @@ Procesa datos cerca de la fuente (IoT, sensores) en lugar de depender solo de la
 - Difícil de gestionar (muchos nodos).  
 - Limitación de recursos locales.  
 - Riesgo de seguridad distribuida.  
-
----
-
-📌 _Documento generado automáticamente. Si necesitas referencias, bibliografía o diagramas en SVG/PDF, se pueden añadir fácilmente._
